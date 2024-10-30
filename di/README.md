@@ -2,7 +2,7 @@
 
 ## Student and Student Types
 
-We have one parent class called `Student`.  
+We have one interface called `Student`.  
 There is a child class called `GraduateStudent` that overrides the method `complain`.
 Next there is a child of `GraduateStudent` that overrides the method `complain` and prints its own message.
 
