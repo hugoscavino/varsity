@@ -184,7 +184,7 @@ public class Lab13Main {
                 break;
             case "Name":
                 // Your code here
-                Collections.sort(movieList, new Comparator<Movie>() {
+                Collections.sort(movieList, new Comparator<>() {
                     @Override
                     public int compare(Movie rhs, Movie lhs) {
                         return lhs.getMovieName().compareTo(rhs.getMovieName());
