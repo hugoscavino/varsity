@@ -14,4 +14,4 @@ Next there is a child of `GraduateStudent` that overrides the method `complain` 
 4. The `SchoolApplication` is the one creating, i.e. calling `= new`, the `ComplaintCenter` only knows about `Student`
 5. When the `ComplaintCenter` loops through all the `Student` objects in the list, the compiler knows which `complain` method to invoke.
 6. If later we create a `PartTimeStudent` class, we can add it via the `SchoolApplication` class and the `ComplaintCenter` 
-does need to change its interface  
+does <b>NOT</b> need to change its interface  
