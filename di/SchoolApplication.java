@@ -6,14 +6,13 @@ import java.util.List;
 public class SchoolApplication {
     public static void main(String[] args) {
         // Create a ComplaintCenter
-        ComplaintCenter complaintCenter = new ComplaintCenter();
         List<Student> studentsWithComplaints = new ArrayList<>();
         // get all the student with complaints
 
         // Create a Graduate Student
         Student graduateStudent = new GraduateStudent();
 
-        // Create a Phd Student
+        // Create a PhD Student
         Student phdStudent = new Phd();
 
         // add the students to the List<Student>
@@ -21,7 +20,7 @@ public class SchoolApplication {
         studentsWithComplaints.add(phdStudent);
 
         // Add the list of <Student> to the ComplaintCenter
-        complaintCenter.addStudentWithComplaints(studentsWithComplaints);
+        ComplaintCenter complaintCenter = new ComplaintCenter(studentsWithComplaints);
 
         /*
          Note that each type of student will print/invoke its OWN IMPLEMENTATION
@@ -35,11 +34,11 @@ public class SchoolApplication {
 
         System.out.println("--------------------------- PART TIME STUDENTS ADDED ---------------");
 
-        // If the future we want to add part time students
+        // If the future we want to add parttime students
         // add it to the list
         studentsWithComplaints.add(new PartTimeStudent());
         // Add the list again
-        complaintCenter.addStudentWithComplaints(studentsWithComplaints);
+        complaintCenter = new ComplaintCenter(studentsWithComplaints);
         // print out the complaints
         complaintCenter.printComplaints();
     }

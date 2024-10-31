@@ -10,17 +10,9 @@ public class ComplaintCenter {
     private final List<Student> students;
 
     // Constructor
-    public ComplaintCenter() {
-        students = new ArrayList<>();
-    }
+    public ComplaintCenter(List<Student> students) {
+        this.students = students;
 
-    // Add all the students to our List<Student>
-    public void addStudentWithComplaints(List<Student> students) {
-
-        // start from scratch, clear out the previous list
-        this.students.clear();
-        // Add this list
-        this.students.addAll(students);
     }
 
     public void printComplaints() {
