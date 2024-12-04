@@ -1,0 +1,3 @@
+lab19.Movie{title='Wicked'}
+lab19.Movie{title='Movie2'}
+lab19.Movie{title='Dune'}

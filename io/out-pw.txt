@@ -1,3 +1,0 @@
-Movie{title='Wicked'}
-Movie{title='Movie2'}
-Movie{title='Dune'}
